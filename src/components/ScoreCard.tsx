@@ -1,7 +1,7 @@
 import { CATEGORIES, CATEGORY_ORDER } from "@/lib/quiz-data";
 import type { Result } from "@/lib/scoring";
 
-export function ScoreCard({ result, name }: { result: Result; name?: string }) {
+export function ScoreCard({ result, name }: { result: Result; name?: string | undefined }) {
   return (
     <div
       id="share-card"
