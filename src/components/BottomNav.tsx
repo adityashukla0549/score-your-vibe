@@ -33,7 +33,12 @@ export function BottomNav() {
 export function Screen({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background">
-      <div className="mx-auto w-full max-w-md px-5 pb-28 pt-8">{children}</div>
+      <div
+        className="mx-auto w-full max-w-md px-5 pb-28 pt-8"
+        style={{ paddingTop: "calc(2rem + env(safe-area-inset-top))" }}
+      >
+        {children}
+      </div>
       <BottomNav />
     </div>
   );
